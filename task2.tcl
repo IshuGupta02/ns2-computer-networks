@@ -120,10 +120,10 @@ proc record_end {} {
 	puts "Bottleneck at [$nssim now]: arr = $parr_start, drops = $pdrops_start"
 }
  
-$nssim color 1 Blue
+$nssim color 1 Yellow
 $nssim color 2 Red
 $nssim color 3 Green
-$nssim color 4 Yellow
+$nssim color 4 Blue
  
 set n0 [$nssim node]
 set n1 [$nssim node]
@@ -162,7 +162,7 @@ set n33 [$nssim node]
  
 set nf [open out.nam w]
 $nssim namtrace-all $nf
- 
+
 proc finish {} {
 	global nssim nf
 	$nssim flush-trace
@@ -170,7 +170,7 @@ proc finish {} {
 	exec nam out.nam &
 	exit 0
 }
- 
+
 $nssim duplex-link $n0 $n12 10Mb 10ms DropTail
 $nssim duplex-link $n1 $n12 10Mb 10ms DropTail
 $nssim duplex-link $n2 $n12 10Mb 10ms DropTail

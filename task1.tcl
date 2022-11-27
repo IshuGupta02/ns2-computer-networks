@@ -120,10 +120,10 @@ proc record_end {} {
 	puts "Bottleneck at [$nssim now]: arr = $parr_start, drops = $pdrops_start"
 }
  
-$nssim color 1 Blue
+$nssim color 1 Pink
 $nssim color 2 Red
 $nssim color 3 Green
-$nssim color 4 Yellow
+$nssim color 4 Blue
  
 set n0 [$nssim node]
 set n1 [$nssim node]
