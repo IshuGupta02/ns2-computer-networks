@@ -2,7 +2,7 @@ set rho 0.8
 puts "rho = $rho"
  
 set rng [new RNG]
-$rng seed 69
+$rng seed 100
 set nssim [new Simulator]
  
 set mfsize 500
